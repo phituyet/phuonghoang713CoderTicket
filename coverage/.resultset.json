@@ -1,21 +1,16 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/snowbee/workspace/coderschool/W3/CoderTicket/spec/models/category_spec.rb": [
+      "/home/snowbee/workspace/coderschool/W3/CoderTicket/spec/controllers/events_controller_spec.rb": [
         1,
         null,
         1,
-        null,
-        1,
-        null,
-        3,
-        null,
-        2,
-        null,
-        2,
-        null,
         1,
         1,
+        1,
+        1,
+        null,
+        null,
         null,
         null,
         null
@@ -850,7 +845,7 @@
         1,
         1,
         1,
-        null,
+        1,
         1,
         1,
         null,
@@ -938,6 +933,60 @@
         1,
         null
       ],
+      "/home/snowbee/workspace/coderschool/W3/CoderTicket/app/controllers/events_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/home/snowbee/workspace/coderschool/W3/CoderTicket/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null
+      ],
+      "/home/snowbee/workspace/coderschool/W3/CoderTicket/spec/helpers/events_helper_spec.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/home/snowbee/workspace/coderschool/W3/CoderTicket/spec/models/category_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        3,
+        null,
+        2,
+        null,
+        2,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
       "/home/snowbee/workspace/coderschool/W3/CoderTicket/app/models/category.rb": [
         1,
         1,
@@ -959,6 +1008,14 @@
         null,
         1,
         1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
         null,
         null,
         null
@@ -1065,8 +1122,16 @@
         1,
         1,
         null
+      ],
+      "/home/snowbee/workspace/coderschool/W3/CoderTicket/spec/routes/upcoming_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
       ]
     },
-    "timestamp": 1498840459
+    "timestamp": 1498849845
   }
 }

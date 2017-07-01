@@ -14,4 +14,12 @@ RSpec.describe Event, type: :model do
       expect(@event.name).to match 'Cảm ơn Đời - Live Concert Đan Trường'
     end
   end
+
+  # pending "test pass events"
+  describe ".upcoming" do
+    it "is [] when there are no events" do
+      expect(Event.upcoming).to eq []
+    end
+  end
+
 end
