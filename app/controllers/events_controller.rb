@@ -16,6 +16,7 @@ class EventsController < ApplicationController
 
   def create
     @event = Event.create(event_params)
+    @event.user_id = current_user.id
     if @event.save!
       flash[:success] = "Created a new event"
       redirect_to root_path
@@ -25,6 +26,12 @@ class EventsController < ApplicationController
     end
   end
 
+  def do_publish_event
+    @event = Event.find(params[:id])
+    @event.published_at = DateTime.now
+    @event.save!
+    redirect_to root_path
+  end
   private
   def event_params
     params.require(:event).permit(:name, :starts_at, :ends_at, :hero_image_url, :extended_html_description, :venue_id, :category_id)

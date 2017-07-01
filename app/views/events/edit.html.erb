@@ -4,3 +4,6 @@
 
 <%= link_to 'Show', @event %> |
 <%= link_to 'Back', events_path %>
+<%= link_to edit_event_ticket_type_path(@event ,@ticket_type) do %>
+  <button class='btn btn-lg btn-block btn-danger'> Edit Ticket Types </button>
+<% end %>

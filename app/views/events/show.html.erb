@@ -27,6 +27,12 @@
           <button class='btn btn-lg btn-block btn-danger'> New Ticket Types </button>
         <% end %>
 
+        <% if @event.published_at == nil%>
+          <%= link_to publish_event_path(@event) do %>
+            <button class='btn btn-lg btn-block btn-danger'> Publish Event </button>
+          <% end %>
+        <% end %>
+
 
 
       </div>

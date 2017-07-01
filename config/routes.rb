@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   devise_for :users
   root 'events#index'
   get '/upcoming' => 'events#index'
+  get 'events/:id/do_publish_event/' => "events#do_publish_event",as: 'publish_event'
   resources :events do
     resources :tickets
     resources :ticket_types

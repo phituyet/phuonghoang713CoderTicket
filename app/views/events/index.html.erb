@@ -10,9 +10,11 @@
     <% @events.in_groups_of(3) do |g| %>
       <div class="row">
         <% g.compact.each do |e| %>
+          <% if (e.published_at != nil) || (current_user!= nil && current_user.id == e.user_id) %>
             <%= render partial: 'card', locals: {event: e} %>
+          <% end %>
         <% end %>
-      </div>  
+      </div>
     <% end %>
   </div>
 </div>

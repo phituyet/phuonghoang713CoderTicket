@@ -21,6 +21,7 @@ dalat = Venue.create({
 })
 
 e = Event.create({
+  published_at: Faker::Time.between(DateTime.now - 1, DateTime.now),
   name: 'Việt Nam Thử Thách Chiến Thắng',
   starts_at: DateTime.parse('Fri, 11 Mar 2016 7:00 AM+0700'),
   ends_at: DateTime.parse('Sun, 13 Mar 2016 3:00 PM+0700'),
@@ -49,6 +50,7 @@ dan_venue = Venue.create({
 })
 
 e = Event.create({
+  published_at: Faker::Time.between(DateTime.now - 1, DateTime.now),
   name: 'Cảm ơn Đời - Live Concert Đan Trường',
   venue: dan_venue,
   category: Category.find_by(name: 'Entertainment'),
@@ -132,6 +134,7 @@ gap = Venue.create({
   })
 
 e = Event.create({
+  published_at: Faker::Time.between(DateTime.now - 1, DateTime.now),
   name: 'Merry Christmas Never Alone',
   starts_at: DateTime.parse('Thu, 24 Dec 2015, 8:00 PM+0700'),
   ends_at: DateTime.parse('Thu, 24 Dec 2015, 11:00 PM+0700'),

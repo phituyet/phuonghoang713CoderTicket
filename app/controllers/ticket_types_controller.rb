@@ -15,6 +15,20 @@ class TicketTypesController < ApplicationController
     end
   end
 
+  def edit
+
+  end
+
+  def update
+  @ticket_type = @event.ticket_types
+    if @ticket_type.update(ticket_type_params)
+      redirect_to event_ticket_type_path(@event)
+    else
+      render 'edit'
+    end
+
+  end
+
   def current_event
     @event = Event.find(params[:event_id])
     puts "event_id params: #{params[:event_id]}"
