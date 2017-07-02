@@ -4,7 +4,7 @@
 
 - Submitted by: **Hoang Nguyen**
 - Time spent: **24** hours
-- URL: **Insert your Heroku URL here**
+- URL: **https://polar-fortress-56718.herokuapp.com/**
 - SimpleCov Test Coverage: [coverage/index.html](coverage/index.html)
 
 ## User Stories
