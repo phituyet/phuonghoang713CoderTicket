@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   resources :venues
   resources :events
   devise_for :users
@@ -8,6 +9,7 @@ Rails.application.routes.draw do
   resources :events do
     resources :tickets
     resources :ticket_types
+    resources :orders
   end
 
   # The priority is based upon order of creation: first created -> highest priority.
